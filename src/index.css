@@ -1,0 +1,96 @@
+/* App.css */
+
+/* Base styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px; /* Set a maximum width for responsiveness */
+  margin: 0 auto; /* Center the app horizontally */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header */
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Search bar */
+input[type="text"] {
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+}
+
+/* Selected people list */
+.selected-people {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.selected-person {
+  background-color: #eee;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-weight: bold; /* Add some weight to selected names */
+}
+
+.selected-person button {
+  margin-left: 10px;
+  border: none;
+  background-color: transparent;
+  color: #999;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.2s ease-in-out; /* Smooth color transition on hover */
+}
+
+.selected-person button:hover {
+  color: #666; /* Change color on hover */
+}
+
+/* Search results */
+.search-results {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.search-result {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease-in-out; /* Smooth background transition on hover */
+}
+
+.search-result:hover {
+  background-color: #f5f5f5; /* Change background on hover */
+}
+
+/* Additional touches for a modern aesthetic */
+button:focus {
+  outline: none; /* Remove default button outline */
+}
